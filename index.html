@@ -66,15 +66,16 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 3px;
-      height: 80px;
-      background: linear-gradient(45deg, white, transparent);
-      border-radius: 50%;
-      opacity: 0.8;
+      width: 4px;
+      height: 1000px;
+      background: linear-gradient(-45deg, white, rgba(255,255,255,0));
+      border-radius: 50%/ 100%;
+      opacity: 0.9;
       transform: rotate(45deg);
       animation-name: shootingStarFall;
       animation-timing-function: linear;
       animation-iteration-count: infinite;
+      filter: drop-shadow(0 0 6px white);
     }
 
     @keyframes shootingStarFall {

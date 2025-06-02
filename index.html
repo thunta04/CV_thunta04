@@ -24,20 +24,6 @@
       box-sizing: border-box;
     }
 
-    .marquee {
-      white-space: nowrap;
-      overflow: hidden;
-      box-sizing: border-box;
-      font-size: 2rem;
-      font-weight: bold;
-      animation: marquee 10s linear infinite;
-    }
-
-    @keyframes marquee {
-      0%   { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--bg);
@@ -125,6 +111,25 @@
       margin-top: 1rem;
     }
 
+    .typewriter {
+      overflow: hidden;
+      border-right: 2px solid white; /* Đường gạch nhấp nháy */
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: 2px;
+      animation: typing 3s steps(22, end), blink 0.75s step-end infinite;
+      width: 0;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 22ch; } /* số ký tự, phù hợp với tên của bạn */
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
     footer {
       background-color: #2C3E50;
       color: white;
@@ -175,7 +180,7 @@
 
   <header>
     <img src="your_photo.jpg" alt="Nguyen Tran Anh Thu" />
-    <div class="marquee">Nguyen Tran Anh Thu</div>
+    <h1 class="typewriter">Nguyen Tran Anh Thu</h1>
     <p>Email: <a href="mailto:nguyentrananhthumx2003@gmail.com" style="color: white;">nguyentrananhthumx2003@gmail.com</a></p>
     <p>Phone: (+84) 336 556 874</p>
     <p>Location: District 10, Ho Chi Minh City</p>

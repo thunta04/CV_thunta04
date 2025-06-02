@@ -24,6 +24,20 @@
       box-sizing: border-box;
     }
 
+    .marquee {
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      font-size: 2rem;
+      font-weight: bold;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       background-color: var(--bg);
@@ -161,7 +175,7 @@
 
   <header>
     <img src="your_photo.jpg" alt="Nguyen Tran Anh Thu" />
-    <h1>Nguyen Tran Anh Thu</h1>
+    <div class="marquee">Nguyen Tran Anh Thu</div>
     <p>Email: <a href="mailto:nguyentrananhthumx2003@gmail.com" style="color: white;">nguyentrananhthumx2003@gmail.com</a></p>
     <p>Phone: (+84) 336 556 874</p>
     <p>Location: District 10, Ho Chi Minh City</p>

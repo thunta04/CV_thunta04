@@ -26,6 +26,10 @@
     }
 
     body {
+  margin-left: 200px;
+}
+
+    body {
       font-family: 'Inter', sans-serif;
       background-color: var(--bg);
       color: var(--text);
@@ -34,42 +38,45 @@
     }
 
     .navbar {
-      position: sticky;
+      position: fixed;
+      left: 0;
       top: 0;
+      width: 200px;
+      height: 100vh;
       background-color: var(--accent);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
       z-index: 999;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     .navbar ul {
       list-style: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0.5rem 0;
+      padding: 0;
       margin: 0;
-      flex-wrap: wrap;
+      width: 100%;
     }
 
     .navbar li {
-      padding: 0 1rem;
-      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    .navbar li:last-child {
-      border-right: none;
-    } 
-    
     .navbar a {
+      display: block;
+      padding: 1rem 0;
       color: white;
-      background-color: transparent;
+      text-decoration: none;
+      transition: background-color 0.3s;
     }
 
     .navbar a:hover {
-      color: #1abc9c;
       background-color: rgba(255, 255, 255, 0.1);
+      color: #1abc9c;
     }
-
+    
     html {
       scroll-behavior: smooth;
     }
@@ -295,7 +302,7 @@
     </ul>
   </nav>
   
-  <button class="toggle-btn" onclick="toggleDarkMode()"><i id="mode-icon" class="fas fa-moon"></i></button>
+  <button class="toggle-btn"><i id="mode-icon" class="fas fa-moon"></i></button>
  
   <script>
     function toggleDarkMode() {

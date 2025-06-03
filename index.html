@@ -6,6 +6,8 @@
   <title>Nguyen Tran Anh Thu - CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <style>
     :root {
       --bg: #f9f9f9;
@@ -213,6 +215,10 @@
 <body>
 
   <button class="toggle-btn" onclick="document.body.classList.toggle('dark-mode')">Change Mode</button>
+  
+  <script>
+    AOS.init();
+  </script>
 
   <header>
     <img src="your_photo.jpg" alt="Nguyen Tran Anh Thu" />
@@ -226,17 +232,21 @@
      </div>
   </header>
 
-  <section>
+  <section data-aos="fade-up">
     <h2>🎯 About Me</h2>
     <p>I am a recent graduate with a strong foundation in Business Statistics from the University of Economics HCM City (UEH). My academic and internship experiences have equipped me with hands-on skills in data analysis using SPSS, Excel, and R. I have worked on real-world datasets, managed data cleaning and validation processes, and built simple forecasting models. I am passionate about transforming raw data into actionable insights, and eager to contribute to the success of cross-functional teams, particularly in research and operational settings.</p>
+  </section>
 
+  <section data-aos="fade-up">
     <h2>🎓 Education</h2>
     <ul>
       <li><strong>UEH – University of Economics HCM City</strong></li>
       <li>Bachelor of Business Statistics</li>
       <li>GPA: 3.5 / 4.0</li>
     </ul>
+  </section>
 
+  <section data-aos="fade-up">
     <h2>💼 Experience</h2>
     <ul>
       <li>
@@ -258,7 +268,9 @@
          </ul>
        </li>
     </ul>
-
+  </section>
+  
+  <section data-aos="fade-up">
     <h2>🛠 Skills</h2>
     <ul class="skill-list">
       <li><strong>Data Analysis Tools:</strong> SPSS, R Studio</li>
@@ -266,13 +278,17 @@
       <li><strong>Office Tools:</strong> Microsoft Excel, Word, PowerPoint</li>
       <li><strong>Soft Skills:</strong> Communication, Problem Solving, Teamwork, Collaboration</li>
     </ul>
-
+  </section>
+  
+  <section data-aos="fade-up">
     <h2>📜 Certifications</h2>
     <ul>
       <li>TOEIC: 680</li>
       <li>IC3 Digital Literacy Certification</li>
     </ul>
+  </section>
 
+  <section data-aos="fade-up">
     <h2>📘 Study Project</h2>
     <p><a href="https://drive.google.com/file/d/148T5FOA66j_W3rtG0pgO0x7YhbpdOXI2/view?usp=sharing" target="_blank" style="color: var(--accent); text-decoration: none;"><strong>Co.op Food – Convenience Store Model Development</strong></a></p>
     <ul>
@@ -280,6 +296,7 @@
       <li>Tools: Excel, SPSS, Charts, Correspondence Analysis</li>
       <li>Analyzed consumer behavior and acceptance of the Co.op Food convenience store model in HCMC</li>
     </ul>
+  </section>
 
     <a href="cv.pdf" class="download-btn" target="_blank">View PDF CV</a>
   </section>

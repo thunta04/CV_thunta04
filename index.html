@@ -280,24 +280,6 @@
   </style>
 </head>
 <body>
-
-  <script>
-   document.querySelectorAll('.ripple').forEach(button => {
-      button.addEventListener('click', function (e) {
-        const circle = document.createElement('span');
-        circle.classList.add('ripple-effect');
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        circle.style.width = circle.style.height = size + 'px';
-        circle.style.left = (e.clientX - rect.left - size / 2) + 'px';
-        circle.style.top = (e.clientY - rect.top - size / 2) + 'px';
-        this.appendChild(circle);
-
-        setTimeout(() => circle.remove(), 600);
-      });
-    });
-  </script>
-  
   <nav class="navbar">
     <ul>
       <li><a href="#about">About</a></li>
@@ -362,7 +344,6 @@
           <li>Participated in client projects such as J&T Express, GIZ Energy, MB Ageas Life, supporting data extraction, cleansing, and dashboard creation</li>
         </ul>
        </li>
-  </section>
   
        <li>
          <strong>District 1 Statistics Office – Data Validation Officer</strong> <i>(May 2024 – July 2024)</i></li>
@@ -373,6 +354,7 @@
          </ul>
        </li>
     </ul>
+  </section>
 
   <section id="skills">
     <h2>🛠 Skills</h2>
@@ -419,5 +401,20 @@
     <p style="margin-top: 15px;">&copy; 2025 Nguyen Tran Anh Thu</p>
   </footer>
 
+  <script>
+    document.querySelectorAll('.ripple').forEach(button => {
+      button.addEventListener('click', function (e) {
+        const circle = document.createElement('span');
+        circle.classList.add('ripple-effect');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        circle.style.width = circle.style.height = size + 'px';
+        circle.style.left = (e.clientX - rect.left - size / 2) + 'px';
+        circle.style.top = (e.clientY - rect.top - size / 2) + 'px';
+        this.appendChild(circle);
+        setTimeout(() => circle.remove(), 600);
+      });
+    });
+  </script>
 </body>
 </html>

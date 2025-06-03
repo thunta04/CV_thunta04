@@ -67,7 +67,13 @@
       background-color: rgba(255, 255, 255, 0.1);
       color: #1abc9c;
     }
-    
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+ 
     html {
       scroll-behavior: smooth;
     }
@@ -313,13 +319,15 @@
   </header>
 
   <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#project">Project</a></li>
-    </ul>
+    <div class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+      </ul>
+    </div>
   </nav>
   
   <section id="about">

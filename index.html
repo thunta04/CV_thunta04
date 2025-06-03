@@ -42,10 +42,17 @@
       background-color: var(--accent);
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
+      padding: 0.6rem 0.8rem;
+      border-radius: 50%;
+      font-size: 1.1rem;
       cursor: pointer;
       z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .toggle-btn:hover {
+      transform: scale(1.1);
     }
 
     header {
@@ -218,6 +225,20 @@
   
   <script>
     AOS.init();
+  </script>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const icon = document.getElementById('mode-icon');
+      if (document.body.classList.contains('dark-mode')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    }
   </script>
 
   <header>

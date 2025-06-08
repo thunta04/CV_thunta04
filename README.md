@@ -1,6 +1,6 @@
 # 💼- Personal CV Website
 
-This is the **personal CV webpage** of **Le Van Quang**, built using **pure HTML and CSS**, with a clean and modern design. It showcases personal details, education, work experience, and skillsets.
+This is the **personal CV webpage** , built using **pure HTML and CSS**, with a clean and modern design. It showcases personal details, education, work experience, and skillsets.
 
 📍 **Live Site**: https://thunta04.github.io/myporfolio/
 
